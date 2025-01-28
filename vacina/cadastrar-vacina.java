@@ -7,9 +7,9 @@ public Elemento cadastrarVacina(Elemento elementoEntrada) {
 
 		conx = getConnection();
 		
-		String nome_vacina = elementoEntrada.getValor("vacina.nome");
-		String fornecedor = elementoEntrada.getValor("vacina.fornecedor");
-		String lote = elementoEntrada.getValor("vacina.lote");
+		String nome_vacina = elementoEntrada.getValor("vacina.novacina");
+		String fornecedor = elementoEntrada.getValor("vacina.nofornecedor");
+		String lote = elementoEntrada.getValor("vacina.nrlote");
 
 		ObjetoPersistente obj = new ObjetoPersistente(BancoDeDados,TB_VACINA, conx);
 		

@@ -7,8 +7,8 @@ public Elemento cadastrarTutor(Elemento elementoEntrada) {
 
 		conx = getConnection();
 		
-		String nome = elementoEntrada.getValor("tutor.nome");
-		String telefone = elementoEntrada.getValor("tutor.telefone");
+		String nome = elementoEntrada.getValor("tutor.notutor");
+		String telefone = elementoEntrada.getValor("tutor.teltutor");
 
 		ObjetoPersistente obj = new ObjetoPersistente(BancoDeDados,TB_TUTOR, conx);
 		
